@@ -1,0 +1,23 @@
+accessWidener v2 official
+
+# CONFIRMED via decompile of the shipped reinforced-chests-26.1.2 jar (chest
+# needed the exact same datafixer mixin as barrel). The old 1.21 accesswidener
+# had this as "StackData"; the 26.1.2 inner class is "ItemStackData".
+accessible class net/minecraft/util/datafix/fixes/ItemStackComponentizationFix$ItemStackData
+
+# NOTE: the old 1.21 accesswidener also had:
+#   accessible class net/minecraft/block/entity/BlockEntityType$BlockEntityFactory
+# This is no longer needed: reinforced-chests' 26.1.2 port replaced the old
+# BlockEntityTypeInvoker (@Invoker into BlockEntityType.create) with Fabric
+# API's FabricBlockEntityTypeBuilder, which needs no access widening. Barrel's
+# equivalent mixin/registration code below has been updated to match.
+
+# CONFIRMED by the actual 26.1.2 compiler output: "matchingStates has private access in
+# PoiType" - this proves both the class (net.minecraft.world.entity.ai.village.poi.PoiType)
+# and field name (matchingStates, type Set<BlockState>) are correct. Only the field's
+# visibility needed confirming, which this error message settled directly - no longer
+# speculative for these two facts specifically (the class name/package match my earlier
+# guess based on real historical Mojang naming, now verified against real 26.1.2 by the
+# compiler itself).
+accessible field net/minecraft/world/entity/ai/village/poi/PoiType matchingStates Ljava/util/Set;
+mutable field net/minecraft/world/entity/ai/village/poi/PoiType matchingStates Ljava/util/Set;

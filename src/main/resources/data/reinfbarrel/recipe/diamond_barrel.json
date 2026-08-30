@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["MMM", "MBM", "MMM"],
+  "key": {
+    "B": "reinfbarrel:gold_barrel",
+    "M": "minecraft:diamond"
+  },
+  "result": {
+    "count": 1,
+    "id": "reinfbarrel:diamond_barrel"
+  }
+}

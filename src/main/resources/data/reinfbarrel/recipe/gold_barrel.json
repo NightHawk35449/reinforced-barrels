@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["MMM", "MBM", "MMM"],
+  "key": {
+    "B": "reinfbarrel:iron_barrel",
+    "M": "minecraft:gold_ingot"
+  },
+  "result": {
+    "count": 1,
+    "id": "reinfbarrel:gold_barrel"
+  }
+}
