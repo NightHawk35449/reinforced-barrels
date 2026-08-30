@@ -1,0 +1,23 @@
+# Gradle
+.gradle/
+build/
+
+# IntelliJ IDEA
+.idea/
+
+# VS Code
+.vscode/
+
+# Local development/runtime files
+run/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Java
+*.class
+
+# Local environment files
+.env
+*.local
