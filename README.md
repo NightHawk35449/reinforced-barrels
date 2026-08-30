@@ -1,61 +1,98 @@
+# Reinforced Barrels — Minecraft 26.1.2 Port
+
 ![Reinforced Barrels](./images/header.png)
 
-[![Mod Loader: Fabric](https://img.shields.io/static/v1?label=modloader&message=fabric&color=brightgreen)](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
-![Mod Environment](https://img.shields.io/static/v1?label=environment&message=client%2Fserver&color=yellow)
-![Version](https://cf.way2muchnoise.eu/versions/529875.svg)
-[![CurseForge](https://cf.way2muchnoise.eu/529875.svg)](https://www.curseforge.com/minecraft/mc-mods/reinforced-barrels)
-[![Modrinth](https://img.shields.io/modrinth/dt/Tx85779b?color=%2300AF5C&logo=modrinth)](https://modrinth.com/mod/reinforced-barrels)
-[![MIT License](https://img.shields.io/static/v1?label=licence&message=MIT&color=blue)](./LICENSE)
+> **This is an unofficial port of Reinforced Barrels by Aton-Kish for Minecraft 26.1.2.**
 
-# Reinforced Barrels
+This project maintains **Reinforced Barrels** for newer versions of Minecraft. The original mod was created by **Aton-Kish**.
 
-The Reinforced Barrels mod adds reinforced barrels.
+This repository contains the changes necessary to port the original mod to **Minecraft 26.1.2 using Fabric**.
 
-[<img alt="Requires Fabric API" src="https://i.imgur.com/Ol1Tcf8.png" width="128"/>](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
+## Original Project
+
+**Original Author:** Aton-Kish
+
+**Original Repository:**
+https://github.com/Aton-Kish/reinforced-barrels
+
+**Original Modrinth Page:**
+https://modrinth.com/mod/reinforced-barrels
+
+**Original CurseForge Page:**
+https://www.curseforge.com/minecraft/mc-mods/reinforced-barrels
+
+The original project is licensed under the **MIT License**. The original copyright and license information are preserved in this repository.
+
+## Minecraft 26.1.2
+
+* **Minecraft:** 26.1.2
+* **Mod Loader:** Fabric
+* **Port:** Unofficial community port
+* **Original Mod:** Reinforced Barrels by Aton-Kish
+* **Original Version:** v4.09+1.21.11
+
+This project is intended to keep the mod available for newer Minecraft versions when the original project does not yet support them.
+
+## Features
+
+Reinforced Barrels adds reinforced barrel variants with progressively larger inventories:
+
+| Barrel           | Inventory |
+| ---------------- | --------: |
+| Copper Barrel    |  45 slots |
+| Iron Barrel      |  54 slots |
+| Gold Barrel      |  81 slots |
+| Diamond Barrel   | 108 slots |
+| Netherite Barrel | 108 slots |
+
+The Netherite Barrel is resistant to blast, fire, and lava.
+
+## Installation
+
+1. Install **Minecraft 26.1.2**.
+2. Install the **Fabric Loader** for Minecraft 26.1.2.
+3. Install the required version of **Fabric API**.
+4. Install **Reinforced Core** for Minecraft 26.1.2.
+5. Place the Reinforced Barrels `.jar` file in your Minecraft `mods` folder.
+Reinforced Core is required for Reinforced Barrels to function.
 
 ## Reinforced Storage Mod Series
 
-- [Reinforced Chests](https://github.com/Aton-Kish/reinforced-chests)
-- [Reinforced Shulker Boxes](https://github.com/Aton-Kish/reinforced-shulker-boxes)
+Reinforced Barrels is part of the Reinforced Storage Mod Series created by Aton-Kish.
 
-## Recipe
+* [Reinforced Chests](https://github.com/Aton-Kish/reinforced-chests)
+* [Reinforced Shulker Boxes](https://github.com/Aton-Kish/reinforced-shulker-boxes)
+* [Reinforced Core](https://github.com/Aton-Kish/reinforced-core)
 
-| Name             | Type            | Ingredients                      | Recipe                                                                                                 | Description                                                                                             |
-| ---------------- | --------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
-| Copper Barrel    | Shaped Crafting | Barrel + Copper Ingot            | <img alt="Copper Barrel Recipe" src="./images/recipes/copper_barrel.png" width="256" />                | A copper barrels has a container inventory with 45 slots.                                               |
-| Iron Barrel      | Shaped Crafting | Copper Barrel + Iron Ingot       | <img alt="Iron Barrel Recipe" src="./images/recipes/iron_barrel.png" width="256" />                    | An iron barrels has a container inventory with 54 slots.                                                |
-| Gold Barrel      | Shaped Crafting | Iron Barrel + Gold Ingot         | <img alt="Gold Barrel Recipe" src="./images/recipes/gold_barrel.png" width="256" />                    | A gold barrels has a container inventory with 81 slots.                                                 |
-| Diamond Barrel   | Shaped Crafting | Gold Barrel + Diamond            | <img alt="Diamond Barrel Recipe" src="./images/recipes/diamond_barrel.png" width="256" />              | A diamond barrels has a container inventory with 108 slots.                                             |
-| Netherite Barrel | Smithing        | Diamond Barrel + Netherite Ingot | <img alt="Netherite Barrel Recipe" src="./images/recipes/netherite_barrel_smithing.png" width="256" /> | A netherite barrel has a container inventory with 108 slots. This is resistant to blast, fire and lava. |
+## ## Configuration
 
-## Configure
+The original project provides configuration through **Reinforced Core** and Mod Menu.
 
-[The Reinforced Core lib](https://github.com/Aton-Kish/reinforced-core) has been integrated with [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu) since version 3.0.0.
+The Reinforced Core 26.1.2 port is functional, but **Mod Menu integration has not yet been confirmed working on Minecraft 26.1.2**.
 
-![Mod Menu](./images/modmenu/modmenu.png)
+The configuration options will be documented here once Mod Menu support has been verified.
 
-### Screen Type
 
-_Available in Reinforced Barrels mod version 2.2.0+._
+## Porting and Maintenance
 
-Screen type is `SINGLE` or `SCROLL`. (default: `SINGLE`)
+This repository is maintained as an unofficial compatibility port.
 
-| `SINGLE` screen                               | `SCROLL` screen                                |
-| --------------------------------------------- | ---------------------------------------------- |
-| ![Single Screen](./images/modmenu/single.png) | ![Scroll Screen](./images/modmenu/scroll6.png) |
+The goal of this project is to preserve the original mod's functionality while updating it for newer Minecraft versions.
 
-### Scroll Screen
-
-#### Rows
-
-_Available in Reinforced Barrels mod version 2.2.0+._
-
-Rows is an integer in the range from `6` to `9`. (default: `6`)
-
-| Rows: `6`                                              | Rows: `9`                                              |
-| ------------------------------------------------------ | ------------------------------------------------------ |
-| ![Scroll Screen: 6 rows](./images/modmenu/scroll6.png) | ![Scroll Screen: 9 rows](./images/modmenu/scroll9.png) |
+Gameplay changes are not intentionally introduced as part of the porting process.
 
 ## License
 
-The Reinforced Barrels mod is licensed under the MIT License, see [LICENSE](./LICENSE).
+The original Reinforced Barrels source code is licensed under the **MIT License**.
+
+Copyright (c) 2021 Aton-Kish
+
+See [LICENSE](./LICENSE) for the complete license text.
+
+## Credits
+
+**Original mod:** Reinforced Barrels
+**Original author:** Aton-Kish
+
+This project is not affiliated with or endorsed by Aton-Kish unless otherwise stated.
+
